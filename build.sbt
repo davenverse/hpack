@@ -8,7 +8,7 @@ ThisBuild / scalaVersion := Scala213
 ThisBuild / testFrameworks += new TestFramework("munit.Framework")
 
 val catsV = "2.6.1"
-val catsEffectV = "3.2.9"
+val catsEffectV = "3.5.2"
 val munitCatsEffectV = "1.0.6"
 
 
