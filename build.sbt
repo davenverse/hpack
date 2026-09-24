@@ -12,7 +12,8 @@ ThisBuild / developers := List(
 ThisBuild / tlCiReleaseBranches := Seq("main")
 
 val Scala213tl = "2.13.18"
-ThisBuild / crossScalaVersions := Seq("2.12.20",  Scala213tl)
+// ArraySeq (scala.collection.immutable) is 2.13+, so this cannot build on 2.12.
+ThisBuild / crossScalaVersions := Seq( Scala213tl)
 ThisBuild / scalaVersion := Scala213tl
 
 // Compiler settings DavenversePlugin injected globally. sbt-typelevel-ci-release
