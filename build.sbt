@@ -9,7 +9,7 @@ ThisBuild / developers := List(
 )
 
 // sbt-davenverse published a snapshot from main on every push; preserve that.
-ThisBuild / tlCiReleaseBranches := Seq("main")
+ThisBuild / tlCiReleaseBranches := Seq()
 
 val Scala213tl = "2.13.18"
 // ArraySeq (scala.collection.immutable) is 2.13+, so this cannot build on 2.12.
